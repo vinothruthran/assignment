@@ -1,0 +1,81 @@
+
+var libary =
+{
+  detailes:
+ {
+   name:"publiclibrary",
+   place:"tirunrlveli",
+   year:"1/1/1980",
+
+ },
+ staffsdetiles:
+ {
+  name:"publiclibrary",
+  place:"tirunrlveli",
+  year:"1/1/1980",	
+  exprience:"morethen10years",
+  salary:25000,
+  doj:"1/2/2005",
+  qulification:"BA",
+
+
+ },
+ 
+
+ floortype:
+ {
+ 	one:"schoolbooks",
+ 	two:"historys",
+ 	three:"navels",
+ 	four:"jurnalisam&storys",
+ },
+ usertype:
+ {
+ 	name:"vino",
+ 	gender:"male",
+ 	age:"26",
+
+ },
+ libaryfacilities:
+ {
+   tables:10,
+   chairs:12,
+   sytem:1,
+   fan:5,
+ },
+ bookstype:
+ {
+ 	historys:"indianhistorey&worldhistory",
+ 	science:"generalscience&univercalscience",
+ 	maths:"statics&graphtherory",
+ 	compurescience:"java&csshtml",
+ },
+ newspaper:
+ {
+ 	hindhu:"tamil&english",
+ 	thanthi:"tamil",
+ 	dhinakaran:"tamil"
+
+ },
+ storys:
+ {
+   kings:"cholan&cheran&pandian",
+   gods:"siva&vishnu&sakthi",
+   goust:"thikila kathaikal",
+ },
+ journalisam:
+ {
+ 	tamil:"yearly",
+ },
+ librarian:
+ {
+ 	work:"managenment",
+
+ },
+ addmin:
+ {
+ 	work:"add&view&oredr",
+ },
+ 
+
+}

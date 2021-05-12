@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+</head>
+<body>
+    <h1> Random-JS</h1>
+    <p id="vino"> </p>
+    <button onclick="document.getElementById('vino').innerHTML = getRndInteger(0,10)">Click Me</button>
+
+    <script>
+        //document.getElementById("vino").innerHTML = Math.floor(Math.random()*20) +2 <button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">Click Me</button>
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+    </script>
+</body>
+</html>

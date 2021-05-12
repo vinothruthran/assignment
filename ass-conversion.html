@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The JavaScript typeof Operator</h2>
+
+<p>The typeof operator returns the type of a variable, object, function or expression.</p>
+
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML =
+    typeof "vino" + "<br>" +
+    typeof 5.5 + "<br>" +
+    typeof NaN + "<br>" +
+    typeof false + "<br>" +
+    typeof [1,2,3,4,5] + "<br>" +
+    typeof {name: 'vino', age:26} + "<br>" +
+    typeof new Date + "<br>" +
+    typeof function () {} + "<br>" +
+    typeof myCar + "<br>" +
+    typeof null ;
+ 
+document.getElementById("demo").innerHTML =
+    typeof "vino".constructor + "<br>" +
+    typeof 5.5.constructor + "<br>" +
+    typeof NaN .constructor+ "<br>" +
+    typeof false .constructor+ "<br>" +
+    typeof [1,2,3,4,5] .constructor+ "<br>" +
+    typeof {name: 'vino', age:26} .constructor+ "<br>" +
+    typeof new Date .constructor+ "<br>" +
+    typeof function () {} .constructor+ "<br>" +
+    typeof myCar.constructor + "<br>" +
+    typeof null .constructor;
+</script>
+</body>
+</html>

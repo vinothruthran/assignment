@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Object</title>
+</head>
+<body>
+   <!--<button onclick="document.getElementById('demo').innerHTML=Date()">
+        The time is?
+    </button>-->
+    <button onclick="this.innerHTML=Date()">The time is?
+    </button>
+    <p id="demo"></p>
+   <script>
+       let person = {
+  name: "John",
+  age: 25,
+
+  isAlive: true,
+  gender:"male",
+  adderss:"chennail",
+  sibling:{
+      brother:"karthik",
+      sister:"rani"
+  }
+  
+
+  
+  
+};
+person.age = 28
+console.log(person.sibling.brother)
+
+   </script> 
+</body>
+</html>

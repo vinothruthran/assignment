@@ -1,0 +1,103 @@
+
+
+var hospital=
+{
+	Owner:{
+		Name:"suresh",
+		year:"02/06/1990",
+		place:"mukkudal",
+	},
+	Doctors:{
+		Name:"raja",
+
+		ID     :123456,
+		Age   :26,
+		Address:"Deva matha kovil street mukkudal",
+		DOB    :"02/06/1994",
+		Qulification:"B.sc maths",
+		Salary :150000,
+		Specialist:"heart",
+
+		Experience:"more then 10years",
+		place:"mukkudal",
+},
+
+
+
+
+Nurses:{
+	Name:"viji",
+	
+	ID:124356,
+	Age    :24,
+	Address:"matha streer mukkudal",
+	DOB    :"3/4/1996",
+	Qulification:"B.SC",
+	Salary :15000,
+	DOJ:"10/10/2019",
+
+	Experience:"more then 5years",
+	place:"mukkudal"
+
+},
+
+PatientIN:{
+Name:"arun",
+bloodgroup:"B+",
+ID     :124356,
+Age    :28,
+Address:"matha streer mukkudal",
+DOB    :"3/4/1993",
+DOJ:"1/1/2021",
+Diseasetype:"cencer",
+
+Bloodtext:[1],
+
+place:"mukkudal",
+
+},
+
+PatientOP:{
+Name:"Banu",
+bloodgroup:"B+",
+ID     :124356,
+Age    :27,
+Address:"matha streer mukkudal",
+DOB    :"3/4/1994",
+DOJ:"11/3/2021",
+"Disease type":"head problem",
+AttentDoctors:[1],
+bloodtext:[1],
+DOR:[1],
+RoomAvalabile:[1],
+AllText:[11],
+Dailyreport:[1],
+place:"mukkudal",
+
+
+},
+Medical:{
+	medicendetailes:[1],
+	billingtype:[1],
+
+
+},
+Bloodbank:{
+	Bloodgroup:["A+/A","-/B+/B-", "O+/O-"],
+	Donername:"vino",
+
+},
+Xrayroom:{
+	Xraymechine:"",
+	opprater:"",
+	bad:"",
+},
+
+
+
+	
+
+
+
+
+}
