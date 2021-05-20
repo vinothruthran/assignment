@@ -60,105 +60,43 @@ body {margin: 30px;}
           </div>
 
        <div>
-           <table>
-               <tbody>
-                   <tr>
-                       <th>S.NO</th>
-                       <th>Product Name</th>
-                       <th>Quanitity</th>
-                       <th>Price Per Unit</th>
-                       <th>Amount</th>
+           <div class="items-order">
+               <table class="top-head">
+                   <tr id="t-con">
+                    <th id="t-head">Product Name </th>
+                    <th id="t-head">Quanitity </th>
+                    <th id="t-head">Price Per Unit </th>
+
+
                    </tr>
-               </tbody>
-               <tbody>
-                   <tr>
-                       <td>1</td>
-                       <td><input type="text"></td>
-                       <td><input type="number"></td>
-                       <td><input type="number"></td>
-                       <td><input type="number" ></td>
-                       <td>remove</td>
-                   </tr>
-                   <tr>
-                    <td>2</td>
-                    <td><input type="text"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number" ></td>
-                   <td>remove</td>
-                 </tr>
-                <tr>
-                    <td>3</td>
-                    <td><input type="text"></td>
-                       <td><input type="number"></td>
-                       <td><input type="number"></td>
-                       <td><input type="number" ></td>
-                       <td>remove</td>
-                   </tr>
-                <tr>
-                    <td>4</td>
-                    <td><input type="text"></td>
-                    
-                      <td><input type="number"></td>
-                       <td><input type="number"></td>
-                       <td><input type="number" ></td>
-                       <td>remove</td>
-                      
-                      </tr>
-               </tbody>
-               <td></td>
-               
-               <td></td>
-              <td>GST 12%</td>
-              <td>total</td>
-              
-           </table>
+               </table>
+               <p id="total">Total :
+
+               </p>
+           </div>
+
+
+
+          
        </div>
    </div>
 
    <script>
-    function getit(){
-        var result = document.getElementById('demo');
-        var allitems = 0;
-        var itemCount = prompt("how many items do you need?");
-        var items = {};
-        for (i=0;i<itemCount;i++) {
-            items[i]={
-                name : prompt("Product Name"),
-                price :prompt("Product Price"),
-                qty : prompt("Product qty")
-                
-            }
-        }
-        for (i=0;i<itemCount;i++) {
-            var subtotal = 0;
-            var total = 0;
-            subtotal = items[i].price*items[i].qty;
-            total= subtotal *1.05;
-           
-            allitems= allitems + subtotal;
-            result.innerHTML += "Product: " + items[i].name + "<br/>";
-            result.innerHTML += "Total Qty: " + items[i].qty + "<br/>";
-            result.innerHTML += "Sub total: " + "Sub total:" + "<br/>";
-            result.innerHTML += "Sub total: " +  "total:" + "<br/>";
-            if  (i == (itemCount - 1)) {result.innerHTML += "Sub total for all items:" + allitems + "<br/>";}
-
-        }
-        function multiply1() {
-       var num1 = document.getElementById(" QTY").value;
-       var num2 = document.getElementById("value").value;
-       var tot = num1 * num2;
-       document.getElementById("Amount").value = tot;
-   }
-    }
-
+    
    function multiply1() {
        var num1 = document.getElementById("val2").value;
        var num2 = document.getElementById("val3").value;
        var tot = num1 * num2;
        document.getElementById("val4").value = tot;
    }
-
+  function add_product(){
+      $(".top-head tbody").append("<tr>" +
+        "</td>" +$("#det6").val() + "</td>" + 
+        "</td>" +$("#det3").val() + "</td>" + 
+        "</td>" +$("#det2").val() + "</td>" + 
+        "</td>" +$("#det4").val() + "</td>" + 
+        "</td>");
+  }
   
 
   function total() {
@@ -173,7 +111,6 @@ body {margin: 30px;}
     
     
 </script>
-<button onclick = "getit()">shop</button>
 
 <p id="result"> </p>
 
