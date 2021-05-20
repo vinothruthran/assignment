@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <link rel="stylesheet" href="billing.css">
+    <link rel="stylesheet" href="billing-1.html">
+<meta charset=utf-8 />
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<body>
+    <div>
+       <div class="head">
+        <div>
+            <input type="text">
+            <h1>welcome Vinoth</h1>
+        </div>
+        <form class="delails">
+            <div>
+                <label > Customer Name</label>
+                <input type="text" placeholder="Customer Name"pattern="[A-Za-z]" required >
+           
+            </div>
+            <div>
+                <label > Customer id</label>
+                <input type="text" id="val1" placeholder="Customer id"pattern="[A-Za-z]" required >
+           
+            </div>
+            <div>
+                <label > mobile number</label>
+                <input type="text" placeholder="mobile number"pattern="[A-Za-z]" required >
+           
+            </div>
+            <div>
+                <label > Email</label>
+                <input type="text" placeholder="Email"pattern="[A-Za-z]" required >
+           
+            </div>
+           </div>
+            <div>
+                <label > Product Name</label>
+                <input type="text" id="val5" placeholder="Product Name"pattern="[A-Za-z]" required >
+            </div>
+            <div>
+                <label > Price Per Unit</label>
+                <input type="text" id="val2" oninput="multiply1()" required>
+            </div>
+            <div>
+                <label > Quanitity</label>
+                <input type="number" id="val3" oninput="multiply1()" required>
+            </div>
+            <div> Amount</label>
+                <input type="text" id="val4"  required>
+            </div>
+            <input type="button" id="add-btn" onclick="add-product()" value="ADD">
+        </form>
+          <div class="total-list">
+
+          </div>
+
+       <div>
+           <table>
+               <tbody>
+                   <tr>
+                       <th>S.NO</th>
+                       <th>Product Name</th>
+                       <th>Quanitity</th>
+                       <th>Price Per Unit</th>
+                       <th>Amount</th>
+                   </tr>
+               </tbody>
+               <tbody>
+                   <tr>
+                       <td>1</td>
+                       <td><input type="text"></td>
+                       <td><input type="number"></td>
+                       <td><input type="number"></td>
+                       <td><input type="number" ></td>
+                       <td>remove</td>
+                   </tr>
+                   <tr>
+                    <td>2</td>
+                    <td><input type="text"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number" ></td>
+                   <td>remove</td>
+                 </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="text"></td>
+                       <td><input type="number"></td>
+                       <td><input type="number"></td>
+                       <td><input type="number" ></td>
+                       <td>remove</td>
+                   </tr>
+                <tr>
+                    <td>4</td>
+                    <td><input type="text"></td>
+                    
+                      <td><input type="number"></td>
+                       <td><input type="number"></td>
+                       <td><input type="number" ></td>
+                       <td>remove</td>
+                      
+                      </tr>
+               </tbody>
+               <td></td>
+               
+               <td></td>
+              <td>GST 12%</td>
+              <td>total</td>
+              
+           </table>
+       </div>
+   </div>
+
+   <script>
+    function getit(){
+        var result = document.getElementById('demo');
+        var allitems = 0;
+        var itemCount = prompt("how many items do you need?");
+        var items = {};
+        for (i=0;i<itemCount;i++) {
+            items[i]={
+                name : prompt("Product Name"),
+                price :prompt("Product Price"),
+                qty : prompt("Product qty")
+                
+            }
+        }
+        for (i=0;i<itemCount;i++) {
+            var subtotal = 0;
+            var total = 0;
+            subtotal = items[i].price*items[i].qty;
+            total= subtotal *1.05;
+           
+            allitems= allitems + subtotal;
+            result.innerHTML += "Product: " + items[i].name + "<br/>";
+            result.innerHTML += "Total Qty: " + items[i].qty + "<br/>";
+            result.innerHTML += "Sub total: " + "Sub total:" + "<br/>";
+            result.innerHTML += "Sub total: " +  "total:" + "<br/>";
+            if  (i == (itemCount - 1)) {result.innerHTML += "Sub total for all items:" + allitems + "<br/>";}
+
+        }
+        function multiply1() {
+       var num1 = document.getElementById(" QTY").value;
+       var num2 = document.getElementById("value").value;
+       var tot = num1 * num2;
+       document.getElementById("Amount").value = tot;
+   }
+    }
+
+   function multiply1() {
+       var num1 = document.getElementById("val2").value;
+       var num2 = document.getElementById("val3").value;
+       var tot = num1 * num2;
+       document.getElementById("val4").value = tot;
+   }
+
+  
+
+  function total() {
+      var tot = 0;
+      for(var i = 0; i < row.length;i++){
+          var amnt =0;
+          row[i].getElementById("val4").value = amnt;
+          tot += amnt;
+      }
+      document.getElementById("total").value = tot;
+  }
+    
+    
+</script>
+<button onclick = "getit()">shop</button>
+
+<p id="result"> </p>
+
+</body>
+</html>
