@@ -2,7 +2,8 @@
 <html> 
 <head>
     <link rel="stylesheet" href="billing.css">
-    <link rel="stylesheet" href="billing-1.html">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <meta charset=utf-8 />
 <title>JavaScript program to calculate multiplication and division of two numbers </title>
 <style type="text/css">
@@ -10,69 +11,96 @@ body {margin: 30px;}
 </style> 
 </head>
 <body>
-    <div>
-       <div class="head">
+    <div class="billi">
+       <div class="head" >
         <div>
-            <input type="text">
-            <h1>welcome Vinoth</h1>
+            
+            <h1 style="padding-left: 400px;font-family: ui-monospace;   ">RUTHRAN SUPER MARKET</h1>
         </div>
         <form class="delails">
             <div>
-                <label > Customer Name</label>
-                <input type="text" placeholder="Customer Name"pattern="[A-Za-z]" required >
+                <label> Customer Name</label>
+                <input type="text" placeholder="Customer Name" id="val7" pattern="[A-Za-z]" required="">
            
             </div>
+            <br>
             <div>
-                <label > Customer id</label>
-                <input type="text" id="val1" placeholder="Customer id"pattern="[A-Za-z]" required >
+                <label> Customer id</label>
+                <input type="text" id="val1" placeholder="Customer id"  style="margin-left: 29px;" pattern="[A-Za-z]" required="">
            
             </div>
+            <br>
             <div>
-                <label > mobile number</label>
-                <input type="text" placeholder="mobile number"pattern="[A-Za-z]" required >
+                <label> mobile number</label>
+                <input type="text" id="val8" placeholder="mobile number" style="margin-left: 10px;" pattern="[A-Za-z]" required="">
            
             </div>
+            <br>
             <div>
-                <label > Email</label>
-                <input type="text" placeholder="Email"pattern="[A-Za-z]" required >
+                <label> Email</label>
+                <input type="text" id="val9" placeholder="Email" style="margin-left: 74px;" pattern="[A-Za-z]" required="">
            
             </div>
-           </div>
+            <br>
             <div>
-                <label > Product Name</label>
-                <input type="text" id="val5" placeholder="Product Name"pattern="[A-Za-z]" required >
+                <label> Product code</label>
+                <input type="text" id="val6" placeholder="Product Name" style="margin-left: 18px;" pattern="[A-Za-z]" required="">
             </div>
-            <div>
-                <label > Price Per Unit</label>
-                <input type="text" id="val2" oninput="multiply1()" required>
-            </div>
-            <div>
-                <label > Quanitity</label>
-                <input type="number" id="val3" oninput="multiply1()" required>
-            </div>
-            <div> Amount</label>
-                <input type="text" id="val4"  required>
-            </div>
-            <input type="button" id="add-btn" onclick="add-product()" value="ADD">
-        </form>
+            <br>
+                <div>
+                    <label> Product Name</label>
+                    <input type="text" id="val5" placeholder="Product Name" style="margin-left: 11px;" pattern="[A-Za-z]" required="">
+                </div>
+                <br>
+                <div>
+                    <label> Price Per Unit</label>
+                    <input type="text" id="val2" style="margin-left: 14px;" oninput="multiply1()" required="">
+                </div>
+                <br>
+                <div>
+                    <label> Quanitity</label>
+                    <input type="number" id="val3" style="margin-left: 48px;" oninput="multiply1()" required="">
+                </div>
+                <br>
+                <div class="am" style="padding-left: 2px;"> 
+                     <label>Amount</label>
+                    <input type="text" id="val4" style="margin-left: 55px;" required="">
+                </div>
+              <br>
+              <div class="bt" style="padding-left: 20px;">
+                  <input type="button" style="padding-left: 20px;" id="add-btn" onclick="add_product()" value="ADD">
+              </div>
+               <br>
+           </form>
+        </div>
+        <br>
+           
+            
+        
           <div class="total-list">
 
           </div>
 
        <div>
+           <br>
            <div class="items-order">
                <table class="top-head">
-                   <tr id="t-con">
-                    <th id="t-head">Product Name </th>
-                    <th id="t-head">Quanitity </th>
-                    <th id="t-head">Price Per Unit </th>
+					<thead>
+					   <tr id="t-con">
+                        <th id="t-head">Product code </th>
+						<th id="t-head">Product Name </th>
+						<th id="t-head">Quanitity </th>
+						<th id="t-head">Price Per Unit </th>
+                        <th id="t-head">Total </th>
+                        
 
-
-                   </tr>
-               </table>
-               <p id="total">Total :
-
-               </p>
+					   </tr>
+					</thead>
+				   <tbody>
+				   </table>
+               <p id="total" style="padding-top: 30px;">SubTotal : </p>
+               <p id="GST" style="padding-top: 4px;">GST   12%: </p>
+               <p id="total" style="padding-top: 4px;">Net Amount: </p>
            </div>
 
 
@@ -82,37 +110,55 @@ body {margin: 30px;}
    </div>
 
    <script>
-    
+   var total_calc = 0;
    function multiply1() {
        var num1 = document.getElementById("val2").value;
        var num2 = document.getElementById("val3").value;
-       var tot = num1 * num2;
+       var tot = num1 * num2  ;
        document.getElementById("val4").value = tot;
+
+       
    }
-  function add_product(){
-      $(".top-head tbody").append("<tr>" +
-        "</td>" +$("#det6").val() + "</td>" + 
-        "</td>" +$("#det3").val() + "</td>" + 
-        "</td>" +$("#det2").val() + "</td>" + 
-        "</td>" +$("#det4").val() + "</td>" + 
-        "</td>");
+   
+   function add_product(){
+      $(".top-head tbody").append("<tr>" +"<td>" +$("#val6").val() + "</td>" + "<td>" +$("#val5").val() + "</td>" + "<td>" +$("#val4").val() + "</td>" + "<td>" +$("#val2").val() + "</td>" + "<td>" +$("#val4").val() + "</td>" +  "</tr>");
+	  total($("#val4").val());
+      
   }
   
 
-  function total() {
-      var tot = 0;
-      for(var i = 0; i < row.length;i++){
-          var amnt =0;
-          row[i].getElementById("val4").value = amnt;
-          tot += amnt;
-      }
-      document.getElementById("total").value = tot;
-  }
+  
     
+    
+  function total(new_val) {
+		total_calc += parseFloat(new_val);
+		$('#total').html('Total: ' + total_calc);
+        
+        
+	}
+    var gst_calc = 0;
+   function multiply2() {
+       var num1 = document.getElementById("val2").value;
+       var num2 = document.getElementById("val3").value;
+       var sub = num1 * num2 /100*12 ;
+       document.getElementById("val0").value = sub;
+   }
+   function add_gst(){
+      $(".top-head tbody").append( '<tr><td>Total mount without GST </td><td>Rs ${total_amount}</td></tr><tr><td>GST</td><td>Rs ${( total_amount/100)*12}</td></tr><td>Total amount with GST </td><td>Rs ${total_amount_(total_amount/100)*12}</td></tr>');
+	  gst($("#GST").val());
+      
+  }
+  function total(new_val) {
+		total_calc += parseFloat(new_val);
+		$('#total').html('Total: ' + total_calc);
+        
+        
+	}
     
 </script>
 
 <p id="result"> </p>
+
 
 </body>
 </html>
