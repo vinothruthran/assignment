@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+   body{
+    background-color: aqua;
+    font-family: 'Roboto',sans-serif;
+  } 
+  #header{
+    height: 10vh;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: row;
+  }
+  #container{
+    padding-top: 10px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+  }
+  table{
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  tbody td{
+    
+    text-align: center; 
+  }
+  th{
+    border: gray 1px outset;
+    padding: 10px 60px;
+    text-align: center; 
+    color: black;
+    background-color: lightcoral;
+  }
+  #container input{
+    outline: none;
+    margin: 1px;
+    padding: 10px 20px;
+    
+  }
+  #header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .form-group label {
+    color: #095350;
+  }
+  .form-group input {
+    width: auto;
+    background-color: white;
+    padding: 5px;
+    border: #ddd 1px outset;
+    border-radius: 5px;
+  }
+  #search{
+    background-color: lightgreen;
+  }
+  #search input{
+    outline: none;
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 50px;
+  }
+  #search input:focus{
+    outline: none;
+    border-color: rgb(180, 130, 36);
+  }
+  #search h1{
+    background-color: lightgreen;
+    text-align: center;
+    color: blue;
+  }
+#head{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.details{
+    display: flex;
+    flex-direction: column;
+}
+
+#val1{
+   
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 16px;
+    color:  #4caf50;
+    box-shadow: 1px 1px 2px 1px #9e9e9e;
+}
+#val2{
+    
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 16px;
+    color:  black;
+    box-shadow: 1px 1px 2px 1px #9e9e9e;
+}
+#val3{
+    
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 16px;
+    color:  black;
+    box-shadow: 1px 1px 2px 1px #9e9e9e;
+}
+#val4{
+    
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 16px;
+    color:  black;
+    box-shadow: 1px 1px 2px 1px #9e9e9e;
+}
+#val5{
+   
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 16px;
+    color:  black;
+    box-shadow: 1px 1px 2px 1px #9e9e9e;
+}
+#val6{
+    
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 16px;
+    color:  #4caf50;
+    box-shadow: 1px 1px 2px 1px #9e9e9e;
+}
+#val7{
+    
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 16px;
+    color:  #4caf50;
+    box-shadow: 1px 1px 2px 1px #9e9e9e;
+}
+#val8{
+    
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 16px;
+    color:  #4caf50;
+    box-shadow: 1px 1px 2px 1px #9e9e9e;
+}
+#val9{
+    
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 16px;
+    color:  #4caf50;
+    box-shadow: 1px 1px 2px 1px #9e9e9e;
+}
+
+#add-btn {
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    box-shadow: 1px 1px 2px 1px #9e9e9e;
+
+}
+input:hover{
+    background-color: brown;
+}
+
+.billi{
+    background-image: url(https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo-1250x834.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    padding-right: 20px;
+    display: flex;
+    
+
+}
+tr{
+    color: black;
+}
+label{
+    padding-left: 20px;
+    color: black;
+}
+.items-order{
+    
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+}
+p{
+    color: black;
+}
