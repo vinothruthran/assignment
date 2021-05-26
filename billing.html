@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <link rel="stylesheet" href="billing.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<meta charset=utf-8 />
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<body>
+    <h2 style="text-align: center; font-family: fantasy; color: #f44336;">RUTHRAN SUPER MARKET</h2>
+    <div class="billi">
+       
+        <div style="width: 29%; height: 700px; padding-top: 36px;">
+            
+            
+       <div class="head" >
+        <h1 style="padding-left: 400px;font-family: initial; color: #060316;  "></h1>
+    </div>
+        <form class="delails">
+            <div>
+                <label> Customer Name</label>
+                <input type="text" placeholder="Customer Name" id="val7" pattern="[A-Za-z]" required="">
+           
+            </div>
+            <br>
+            <div>
+                <label> Customer id</label>
+                <input type="text" id="val1" placeholder="Customer id"  style="margin-left: 29px;" pattern="[A-Za-z]" required="">
+           
+            </div>
+            <br>
+            <div>
+                <label> Mobile Number</label>
+                <input type="text" id="val8" placeholder="mobile number" style="margin-left: 10px;" pattern="[A-Za-z]" required="">
+           
+            </div>
+            <br>
+            <div>
+                <label> Email</label>
+                <input type="text" id="val9" placeholder="Email" style="margin-left: 74px;" pattern="[A-Za-z]" required="">
+           
+            </div>
+            <br>
+            <div>
+                <label> Product Code</label>
+                <input type="text" id="val6" placeholder="Product Code" style="margin-left: 17px;" pattern="[A-Za-z]" required="">
+            </div>
+            <br>
+                <div>
+                    <label> Product Name</label>
+                    <input type="text" id="val5" placeholder="Product Name" style="margin-left: 11px;" pattern="[A-Za-z]" required="">
+                </div>
+                <br>
+                <div>
+                    <label> Price Per Unit</label>
+                    <input type="text" id="val2" style="margin-left: 14px;" oninput="multiply1()" required="">
+                </div>
+                <br>
+                <div>
+                    <label> Quanitity</label>
+                    <input type="number" id="val3" style="margin-left: 48px;" oninput="multiply1()" required="">
+                </div>
+                <br>
+                <div class="am" style="padding-left: 2px;"> 
+                     <label>Amount</label>
+                    <input type="text" id="val4" style="margin-left: 55px;" required="">
+                </div>
+              <br>
+              <div class="bt" style="padding-left: 20px;">
+                  <input type="button" style="padding-left: 2px;" id="add-btn" onclick="add_product()" value="ADD">
+              </div>
+               <br>
+           </form>
+        </div>
+       
+        
+        <div class="total-list">
+
+          </div>
+
+       <div class="1" style="padding-top: 37px; padding-left: 30px;">
+           
+           <div class="items-order" id="productorder">
+               <table class="top-head">
+					<thead style="font-size: 13px;">
+					   <tr id="t-con">
+                        <th id="t-head">Product code </th>
+						<th id="t-head">Product Name </th>
+						<th id="t-head">Quanitity </th>
+						<th id="t-head">Price Per Unit </th>
+                        <th id="t-head">Total </th>
+                        <th id="t-head">delete </th>
+                       
+
+					   </tr>
+					</thead>
+				   <tbody>
+				   </table>
+               <p id="sub_total" style="padding-top: 30px;">SubTotal : </p>
+               <br>
+               <p id="GST" style="padding-top: 4px;">GST   12%: </p>
+               <br>
+               <p id="total" style="padding-top: 4px;">Net Amount: </p>
+               <br>
+           </div>
+
+
+
+           
+
+       </div>
+   </div>
+
+  
+   <script>
+    var total_calc = 0;
+    function multiply1() {
+        var num1 = document.getElementById("val2").value;
+        var num2 = document.getElementById("val3").value;
+        var tot = num1 * num2  ;
+        document.getElementById("val4").value = tot;
+        
+ 
+        
+    }
+
+    
+    function add_product(){
+       $(".top-head tbody").append("<tr>" +"<td>" +$("#val6").val() + "</td>" + "<td>" +$("#val5").val() + "</td>" + "<td>" +$("#val4").val() + "</td>" + "<td>" +$("#val2").val() + "</td>" + "<td>" +$("#val4").val() + "</td>" +  "</tr>");
+      
+        
+       total($("#val4").val());
+       
+   }
+
+   
+   
+   
+ function total(new_val) {
+         total_calc += parseFloat(new_val);
+         $('#sub_total').html('SubTotal: ' + total_calc);
+         var gst_val = total_calc * 0.12;
+         $('#GST').html('GST  	12%: ' + gst_val);
+         var total_val = total_calc + gst_val;
+          $('#total').html('Net Amount: ' + total_val);
+          
+        }
+     var gst_calc = 0;
+
+     
+     
+</script>
+
+<p id="result"> </p>
+
+
+</body>
+</html>
