@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <link rel="stylesheet" href="billing.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<meta charset=utf-8 />
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<body>
+     <div class="container">
+
+        <div class="header">   
+        
+            <h2 style="text-align: center; font-family: fantasy; color: #f44336; font-size: 20px;">RUTHRAN SUPER MARKET</h2>
+   
+        
+            <!-- Header div -->
+        </div>
+        <br>
+
+        <div class="main">
+        
+
+        <form action="">
+
+            
+            <br>   
+
+            <label for="cname">Customer Name :</label> 
+            <br>
+            <input type="text"  id="cname" >
+            <br>
+
+            <label for="pcode">Product Code :</label>
+            <br>
+            <input type="number"  id="pcode"  min="1"   >
+            <br>
+
+            <label for="pname">Product Name :</label>
+            <br>
+            <input type="text"  id="pname"   >
+            <br>
+
+            <label for="qty">Quantity :</label>
+            <br>
+            <input type="number"  id="qty"  min="1"  >
+            <br>
+
+            <label for="ppu">Price per unit :</label>
+            <br>
+            <input type="number"  id="ppu"  min="1" oninput="totalPrice()" >
+            <br>
+
+            <label for="ppu">Amount  :</label>
+            <br>
+            <input type="text"  id="amt"   min="1"  readonly>
+            <br><br>
+        
+            <input type="button" id="submit"  onclick="add()" value="Add cart">
+       
+             <!-- form closing -->
+        </form>
+
+        <div class="content">                                                  
+           
+              <div class="content-1">
+
+                <header id="content-2-header-1">
+
+                    <p id="cusid"> </p>
+                    <p id="cusname"> </p>
+        
+                <!-- header -->
+                </header>
+            
+                <div class="content-1-main">
+
+                    <div class="column colm-1">
+
+                              
+
+                    <div class="table-content">
+
+        
+                            
+                                <ul class="row-1">
+
+
+
+                                <!--  row-1 ul -->
+                            </ul>
+
+                        
+
+                     </div>
+
+                            <!-- col-1 div -->
+                    </div>
+
+                    <div class="column colm-2">
+
+                        <div class="table-head">
+
+                            <h1> Product Code </h1>
+
+                        </div> 
+
+                      
+                       
+                        <ul class="row-2">
+
+                                
+
+
+                        </ul>
+                     
+                     
+                        <!-- col-2 -->
+                    </div>    
+
+                    <div class="column colm-3">
+
+                        <div class="table-head">
+
+                            <h1> Product Name </h1>
+
+                        </div> 
+                       
+                    
+                     
+                       <ul class="row-3">
+
+                                
+
+                            <!-- row-1 -->
+                        </ul>
+
+                          <!-- col-3 -->
+                </div>
+
+                    <div class="column colm-4">
+
+                        <div class="table-head">
+
+                            <h1> Qty </h1>
+
+                        </div> 
+                        <ul class="row-4">
+
+                                
+
+
+                        </ul>
+
+                        <!-- col-4 -->
+                    </div>
+
+            
+
+
+                 <div class="column colm-5">
+
+                    <div class="table-head">
+
+                        <h1> Price(Unit) </h1>
+
+                    </div> 
+                    <ul class="row-5">
+
+                            
+
+
+                    </ul>
+
+                    <!-- col-5 -->
+                 </div>
+
+                 <div class="column colm-6">
+
+                    <div class="table-head">
+
+                        <h1> Total </h1>
+
+                    </div> 
+                    <ul class="row-6">
+
+                            
+
+
+                    </ul>
+
+                 
+                    <!-- col-6 -->
+                 </div>
+
+                 
+
+            </div>
+                    <div class="table-total">
+
+            
+     
+                    </div>
+
+                    <div class="table-total-2">
+
+                        <div class="table-total-3" id="subtotal"> 
+                           
+                            <span id="total-text" >  Sub Total  : </span> <span id = "total-value" ></span>  
+
+                        </div> 
+                        <div class="table-total-3" id="subtotal"> 
+                           
+                            <span id="total-text"> Gst 12%  : </span><span id = "gst-text"  ></span>
+
+                        </div> 
+
+                        <div class="table-total-3" id="subtotal"> 
+                           
+                            <span id="total-text"> Net Total  :</span>   <span id = "gt-text" ></span> 
+
+                        </div>                        
+
+                    </div>
+
+                    <div class="edit-option"> 
+                            
+                        <input type="button" value="Remove" class="edit-input e1" onclick="remove() ">
+                        <input type="number" min="0" class="edit-input e2" id="edit-option" value="0" > 
+                        <input type="button" value="Edit" class="edit-input e3" onclick="edit() ">
+            
+                    </div>
+                
+              </div>
+
+             
+                
+        </div>
+
+          
+            
+    </div>
+
+   
+  
+   <script>
+   function totalPrice(){
+
+    let x = document.querySelector("#qty").value;
+    let y = document.querySelector("#ppu").value;
+
+    var price = x * y;
+
+    document.querySelector("#amt").value = price;
+
+}
+
+
+function add(){
+
+    // Variable Declaration
+
+    let cid = 1;
+    let customerName = document.querySelector("#cname").value;
+    let productName  = document.querySelector("#pname").value;
+    let productCode  = document.querySelector("#pcode").value;
+    let unitPrice    = document.querySelector("#ppu").value;
+    let quantity     = document.querySelector("#qty").value;
+    let amount       = document.querySelector("#amt").value;
+
+
+    //  Form Validation
+
+        var  textValidate = /[0-9]/;
+
+     if ( textValidate.test(customerName) || customerName === "" ) {
+            
+            alert("Put the customer name in Alphabetical");
+            return false;
+        }
+        else if(productCode == ""){
+
+            alert(" Given a Product code ")
+            return false;
+        }else if ( textValidate.test(productName) || productName === "" ){
+
+            alert("Put the Product Name in Alphabetical");  
+            return false;
+        }else if( quantity == ""){
+
+            alert("Given a Quantity of a product")
+            return false;  
+        }
+    
+        else if (unitPrice == ""){
+
+            alert("Given a Price Per Unit")
+            return false;
+        }
+
+    var ncid = document.querySelector("#cusid").innerHTML   =  "Customer Id :" + " " + cid;
+    cid = ncid;
+    document.querySelector("#cusname").innerHTML =   "Customer Name :" + " " + customerName;
+    document.querySelector("#content-2-header-1").style.backgroundColor = "white";
+        
+    
+    //.............................................................
+
+     let text = document.createTextNode(productCode);
+     var li   = document.createElement("li");
+     li.appendChild(text);
+     document.querySelector(".row-2").appendChild(li);
+         
+     // ...............................................................
+     
+     let text1 = document.createTextNode(productName);
+     var li    = document.createElement("li");
+     li.appendChild(text1);
+     document.querySelector(".row-3").appendChild(li);
+     
+     //.................................................................
+     
+     let text2 = document.createTextNode(quantity);
+     var li    = document.createElement("li");
+     li.appendChild(text2);
+     document.querySelector(".row-4").appendChild(li);
+
+     //.....................................................................
+     
+     let text3 = document.createTextNode(unitPrice);
+     var li    = document.createElement("li");
+     li.appendChild(text3);
+     document.querySelector(".row-5").appendChild(li);
+
+     //.........................................................................
+     let text4 = document.createTextNode(amount);
+     var li    = document.createElement("li");
+     li.appendChild(text4);
+     document.querySelector(".row-6").appendChild(li).setAttribute("class","total-amount");
+
+    //...........................................................................
+    
+    
+     //................................................................
+      //Adding Total 
+
+        
+ //...............................................................................
+
+    productName  = document.querySelector("#pname").value = ' ' ;
+    productCode  = document.querySelector("#pcode").value = ' ' ;
+    unitPrice    = document.querySelector("#ppu").value   = ' ' ;
+    quantity     = document.querySelector("#qty").value   = ' ' ;
+    amount       = document.querySelector("#amt").value   = ' ' ;
+
+    //.................................................. 
+        gstCalc();
+
+}  
+    //Removing Item
+
+
+   function remove(){
+        var r = document.querySelector("#edit-option").value;
+        var a = document.querySelector(".row-2").querySelectorAll(["li"]);
+        // alert(a.length);
+        var b = document.querySelector(".row-3").querySelectorAll(["li"]);
+        // alert(b.length);
+        var c = document.querySelector(".row-4").querySelectorAll(["li"]);
+        // alert(c.length);
+        var d = document.querySelector(".row-5").querySelectorAll(["li"]);
+        // alert(d.length);
+        var e = document.querySelector(".row-6").querySelectorAll(["li"]);
+        // alert(e.length);
+       
+         a[r].remove();
+         b[r].remove();
+         c[r].remove();
+         d[r].remove();
+         e[r].remove();
+      
+          gstCalc();
+   }
+
+   function edit(){
+
+    var r = document.querySelector("#edit-option").value;
+    var a = document.querySelector(".row-2").querySelectorAll(["li"]);
+    var b = document.querySelector(".row-3").querySelectorAll(["li"]);
+    var c = document.querySelector(".row-4").querySelectorAll(["li"]);
+    var d = document.querySelector(".row-5").querySelectorAll(["li"]);
+    var e = document.querySelector(".row-6").querySelectorAll(["li"]);
+
+    
+    document.querySelector("#pcode").value = a[r].textContent;
+    document.querySelector("#pname").value = b[r].textContent;
+    document.querySelector("#qty").value = c[r].textContent;
+    document.querySelector("#ppu").value = d[r].textContent;
+    document.querySelector("#amt").value = e[r].textContent;
+
+    a[r].remove();
+    b[r].remove();
+    c[r].remove();
+    d[r].remove();
+    e[r].remove();
+
+
+   }
+
+   function gstCalc() {
+       
+   a = document.querySelectorAll(".total-amount");
+
+         let ans = 0; 
+        
+        for( var i= 0; i<a.length;i++){
+     
+                 let p = Number(a[i].textContent);
+                 ans += p;
+                 
+         }
+          document.querySelector("#total-value").innerHTML = ans;
+     
+          //  GST Calc
+     
+         var x  = (ans * 12)/100;
+         // alert(x);
+         var y = Number(ans) + x;
+         document.querySelector("#gst-text").innerHTML =  x;
+         // alert(y);
+         document.querySelector("#gt-text").innerHTML ="Rs"+ Math.round(y);     
+      //...............................................................................
+     
+         productName  = document.querySelector("#pname").value = ' ' ;
+         productCode  = document.querySelector("#pcode").value = ' ' ;
+         unitPrice    = document.querySelector("#ppu").value   = ' ' ;
+         quantity     = document.querySelector("#qty").value   = ' ' ;
+         amount       = document.querySelector("#amt").value   = ' ' ;
+        
+     }
+     
+</script>
+
+<p id="result"> </p>
+
+
+</body>
+</html>
+
+
