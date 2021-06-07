@@ -1,0 +1,230 @@
+*{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	width: 100%;
+	height: 650px;
+	display: grid;
+	grid-template-columns:1fr 4fr 1fr;
+	grid-template-rows:40px 60px auto;
+	background-color: hsl(0, 0%, 90%);
+    transition: background-color 300ms;
+
+}
+.header{
+	display: flex;
+	grid-area:1/1/2/2;
+	background-color: blue;
+	border: 1px solid black;
+}
+.header1{
+	display: flex;
+	background-color: blue;
+	grid-area:1/2/2/4;
+	color: hsl(228deg 56% 96%);
+	
+}
+.search-icon{
+	background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+	width: 25px;
+    box-sizing: border-box;
+    height: 21px;
+    background-size: auto 100px;
+    cursor: pointer;
+    background-position: -398px -73px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    transform: scale(.8);
+    background-repeat: no-repeat;
+}
+.sub-header{
+	display: flex;
+	grid-area:2/2/3/4;
+	border: 1px solid #EEEEEE;;
+	border-left: none;
+
+
+}
+.button {
+  width: 100px;
+    margin: 14px;
+    color: white;
+}
+.left-side{
+	display: flex;
+	grid-area:2/1/3/2;
+	flex-direction: column;
+	padding-top: 20px;
+	font-size: 15px;
+	background-color: 
+}
+.trip{
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
+	line-height: 1.5;
+	justify-content: center;
+}
+.damo{
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5;
+	justify-content: center;
+	padding-left: 20px;
+}
+.Home{
+	display: flex;
+    align-items: center;
+}
+.Travel{
+	display: flex;
+	align-items: center;
+	margin-top: -10px;
+}
+.expenses{
+	display: flex;
+	align-items: center;
+	display: flex;
+	margin-top: -15px;
+}
+.Report{
+	display: flex;
+	align-items: center;
+	display: flex;
+	padding-top: 20px;
+}
+.Advances{
+	display: flex;
+	align-items: center;
+	
+	padding-top: 20px;
+	font-size: 12px;
+}
+.cards{
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+}
+.Travel{
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+}
+.Travel policy {
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+}
+.approval{
+	display: flex;
+	align-items: center;
+	padding-top: 0px;
+	color: green;
+	padding-bottom: 25px;
+
+}
+.setting{
+		display: flex;
+	align-items: center;
+	padding-top: 20px;
+
+}
+
+.Analytics{
+		display: flex;
+	align-items: center;
+	padding-top: 20px;
+
+}
+
+.main{
+	display: flex;
+	grid-area:3/2/4/3;
+	background-color: hsl(0deg 0% 100%);
+	padding: 35px;
+	flex-direction: column;
+
+	
+}
+.Train{
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+background-color: hsl(230deg 38% 97%);
+    transition: background-color 300ms;
+    
+    color: green;
+}
+.tt{
+	display: flex;
+	align-items: center;
+	border-bottom: 3px solid green;
+}
+.rout-1{
+	display: flex;
+	flex-direction: row;
+	width: 800px;
+	height: 100px;
+	border: 1px solid #EEEEEE;;
+	align-items: center;
+	margin-bottom: 50px;
+	font-size: 12px;
+	line-height: 2;
+	
+}
+.rout-2{
+	padding-left: 40px;
+}
+.right-side{
+	display: flex;
+	grid-area:3/3/4/4;
+	flex-direction: column;
+	padding-left: 20px;
+	font-size: 12px;
+	background-color: hsl(252deg 56% 98%);
+	padding-top: 40px;
+
+	
+}
+
+.r-3{
+	display: flex;
+	flex-direction: column;
+	padding-left: 15px;
+	align-items: center;
+	background-color: hsl(280deg 100% 99%);
+	padding-right: 50px;
+
+}
+.r-11{
+	display: flex;
+	flex-direction: column;
+	flex-grow: .5;
+}
+.r-12{
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	justify-content: space-around;
+}
+.r-13{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+@media screen and (max-width: 900px;){
+
+	body{
+		background-color: white;
+	}
+	.container{
+		background-color: white;
+	}
+	
+}
