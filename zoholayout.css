@@ -1,0 +1,1840 @@
+*{
+	border: 0;
+	padding: 0;
+  margin: 0;
+	box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration:none;
+}
+
+.container{
+	display: flex;
+	background-color:#fcefd8;
+	justify-content: center;
+	width: 100%;
+	font-family: var(--zf-primary-semibold);
+	margin-top:0px;
+	border: 10px;
+  font-family: sans-serif;
+  padding: 16px 10px;
+  text-decoration:underline;
+
+
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+img{
+	    width: 120px;
+    	height: 40px;
+    	background-repeat: no-repeat;
+	    background-position: -429px 0;
+	  	background-size: auto 70px;
+
+}
+.english {
+	position: relative;
+	padding-left: 20px;
+	display: flex;
+}
+.english::before{
+	content: '';
+	background-image: url(https://www.zohowebstatic.com/sites/default/files/zoho_general_pages/zgheader-footer-sprite.png); 
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-position: -88px 0px;
+    background-size: 730px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.searchbox{
+	background-image: url(https://www.zohowebstatic.com/sites/default/files/zoho_general_pages/zgheader-footer-sprite.png);
+	background-position: -141px 101px;
+	width: 29px;  
+    height: 50px;
+    background-size: auto 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.subheader{
+	display: flex;
+	justify-content: space-around;
+	flex-grow: 0.3;
+  text-transform: capitalize;
+
+}
+.contact{
+	display: flex;
+	flex-grow: 1;
+	justify-content:space-between;
+	padding: 25px;
+}
+.container1{
+	
+	text-align:  center;
+  flex-grow: 1;
+}
+.featured-title{
+	text-align: center;
+	color: #000;
+    font-size: 11px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+
+
+
+.parent-1{
+
+	grid-area:1/1/3/3;
+	justify-content: center;
+	align-items: center;
+  display: flex;  
+  flex-direction: row;
+  border: 1px solid #f8f8f8;
+
+	min-height: 341.75px;
+  padding: 60px 9px 60px 24px;
+    position: relative;
+    
+    vertical-align: middle; 
+    background: #e8f4ff;
+
+}
+.crm-icon{
+
+   background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+   height:96px; 
+   width:96px;
+   padding-top: 100px;
+   background-size: auto 120px;
+   background-position: -1040px;
+   left: 30px;
+   top: 60px;
+   text-align: center;
+display: flex;
+flex-direction: auto;
+
+
+}
+
+.child2{
+  color: #000;
+    display: block;
+    
+  }
+.child1{
+  padding: 30px;
+}
+.sign-up{
+	
+	display: flex;
+	background-color: red;
+	padding: 8px 20px;
+    display: inline-block;
+    font-family: var(--zf-primary-bold);
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+
+}
+
+.parent1{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1.3fr 1.3fr;
+	grid-template-rows: 1fr 1fr;
+	max-width: 1170px;
+    width: 95%;
+    margin: 30px auto 90px;
+    overflow: hidden;
+    border: 1px solid #f8f8f8;
+
+    }
+
+
+.Mail{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+    display: flex;
+    height: 65px;
+    width: 64px;
+    padding-top: 63px;
+    background-size: 960px auto;
+    background-position: -256px 0;
+    left: 48px;
+    top: 60px;
+    flex-direction: column;
+    text-align: center;
+
+}
+.Ma{
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    display: flex;
+border-right: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+
+}
+.sign-up1{
+  font-size: 10px;
+    text-transform: uppercase;
+    border: 1px solid #03a9f5;
+    padding: 6px 12px;
+    margin-top: 15px;
+    display: inline-block;
+    color: #03a9f5;
+    flex-direction: column;
+    display: flex;
+    color: #fff;
+}
+
+.Projects{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+    display: flex;
+    height: 65px;
+    width: 64px;
+    padding-top: 63px;
+    background-size: 960px auto;
+    background-position: -448px 0;
+    left: 48px;
+    top: 60px;
+    flex-direction: column;
+    text-align: center;
+
+}
+.Pro{
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    display: flex;
+
+    border-bottom: 1px solid #f2f2f2;
+
+}
+.sign-up2{
+  font-size: 10px;
+    text-transform: uppercase;
+    border: 1px solid #03a9f5;
+    padding: 6px 12px;
+    margin-top: 15px;
+    display: inline-block;
+    color: #03a9f5;
+    flex-direction: column;
+    display: flex;
+}
+
+.People1{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+    display: flex;
+    height: 65px;
+    width: 64px;
+    padding-top: 63px;
+    background-size: 963px auto;
+    background-position: -192px -160px;
+    left: 48px;
+    top: 60px;
+    flex-direction: column;
+    text-align: left;
+
+}
+.Peo{
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    display: flex;
+border-right: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+
+
+}
+.sign-up3{
+  font-size: 10px;
+    text-transform: uppercase;
+    border: 1px solid #03a9f5;
+    padding: 6px 12px;
+    margin-top: 15px;
+    display: inline-block;
+    color: #03a9f5;
+    flex-direction: column;
+    display: flex;
+}
+
+.Books{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+    display: flex;
+    height: 65px;
+    width: 64px;
+    padding-top: 63px;
+    background-size: 960px auto;
+    background-position: -59px 0;
+    left: 48px;
+    top: 60px;
+    flex-direction: column;
+    text-align: center;
+
+}
+.Boo{
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    display: flex;
+
+    border-bottom: 1px solid #f2f2f2;
+
+
+}
+.sign-up4{
+  font-size: 10px;
+    text-transform: uppercase;
+    border: 1px solid #03a9f5;
+    padding: 6px 12px;
+    margin-top: 15px;
+    display: inline-block;
+    color: #03a9f5;
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+.parent2{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1.3fr 1.3fr;
+	grid-template-rows: 1fr 1fr;
+	height: 330px;
+	
+  max-width: 1170px;
+    width: 95%;
+    margin: 30px auto 90px;
+    overflow: hidden;
+    font-size: 17px;
+    border: 1px solid #f8f8f8;
+    
+
+}
+
+
+.Remotely{
+	background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+    display: flex;
+    height: 76px;
+    width: 76px;
+    padding-top: 80px;
+    background-size: 1200px auto;
+    background-position: -962px 0;
+    left: 50px;
+    top: 60px;
+    flex-direction: auto;
+    text-align: center;
+
+	
+
+
+
+}
+
+.sign-up5{
+	
+	display: flex;
+	background-color:red;
+	padding: 8px 20px;
+    display: inline-block;
+    font-family: var(--zf-primary-bold);
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+
+}
+.parent{
+	grid-area:1/1/3/3;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+    display: flex;
+    color: #000;
+    position: relative;
+    border: 1px solid #f8f8f8;
+    background: #ffeded;
+    background: -moz-linear-gradient(left,#ffeded 0%,#fff 100%);
+    background: -webkit-linear-gradient(left,#ffeded 0%,#fff 100%);
+    background: linear-gradient(to right,#ffeded 0%,#fff 100%);
+
+}
+.Assist{
+	background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+    display: flex;
+    height: 64px;
+    width: 60px;
+    padding-top: 63px;
+    background-size: 960px auto;
+    background-position: -66px -160px;
+    left: 48px;
+    top: 60px;
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+.ass{
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    display: flex;
+border-right: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+
+}
+
+.sign-up6{
+	font-size: 10px;
+    text-transform: uppercase;
+    border: 1px solid #03a9f5;
+    padding: 6px 12px;
+    margin-top: 15px;
+    display: inline-block;
+    color: #03a9f5;
+    flex-direction: column;
+}
+
+.Meeting{
+	background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+    display: flex;
+    height: 65px;
+    width: 64px;
+    padding-top: 63px;
+    background-size: 960px auto;
+    background-position: -833px 0px;
+    left: 48px;
+    top: 60px;
+    flex-direction: column;
+    text-align: center;
+
+    
+}
+.Meet{
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    display: flex;
+border-bottom: 1px solid #f2f2f2;
+
+
+}
+.sign-up7{
+	font-size: 10px;
+    text-transform: uppercase;
+    border: 1px solid #03a9f5;
+    padding: 6px 12px;
+    margin-top: 15px;
+    display: inline-block;
+    color: #03a9f5;
+    flex-direction: column;
+    display: flex;
+}
+
+.Sprints{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+    display: flex;
+    height: 65px;
+    width: 64px;
+    padding-top: 63px;
+    background-size: 960px auto;
+    background-position: -128px -160px;
+    left: 48px;
+    top: 60px;
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+.Spr{
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    display: flex;
+border-right: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+
+}
+.sign-up8{
+  font-size: 10px;
+    text-transform: uppercase;
+    border: 1px solid #03a9f5;
+    padding: 6px 12px;
+    margin-top: 15px;
+    display: inline-block;
+    color: #03a9f5;
+    flex-direction: column;
+    display: flex;
+}
+
+.Cliq{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+    display: flex;
+    height: 65px;
+    width: 64px;
+    padding-top: 63px;
+    background-size: 960px auto;
+    background-position: -896px 0;
+    left: 48px;
+    top: 60px;
+    flex-direction: column;
+    text-align: center;
+
+    
+}
+.Cli{
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    display: flex;
+border-bottom: 1px solid #f2f2f2;
+
+
+}
+.sign-up9{
+  font-size: 10px;
+    text-transform: uppercase;
+    border: 1px solid #03a9f5;
+    padding: 6px 12px;
+    margin-top: 15px;
+    display: inline-block;
+    color: #03a9f5;
+    flex-direction: column;
+    display: flex;
+}
+.zoho{border: 1px solid #efefef;
+    max-width: 1170px;
+   
+    margin: 60px auto 0;
+    overflow: visible;
+
+  }
+.zoho-one{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+    display: flex;
+       
+    flex-grow: 1;
+    
+    left: 50%;
+    top: 7px;
+    width: 63px;
+    height: 66px;
+    background-size: auto 66px;
+    background-position: -671px 0;
+    background-repeat: no-repeat;
+    margin-left: -30px;
+    
+} 
+.child-11 {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.child-12 {
+    color: #000;
+    display: block;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.zoho{
+   
+   width: 100%;
+  
+   display: flex;
+ padding: 20px;
+ padding: 40px 90px 40px;
+}
+p{
+  font-size: 17px;
+     
+}
+
+.parent3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-top: none;
+  border: 1px solid #f8f8f8;
+  width: 100%;
+  display: grid;
+  width: 100%;
+    display: grid;
+    border: 1px solid #efefef;
+    border-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    max-width: 1170px;
+    padding-top: 100px;
+    padding: 40px 15px 30px 40px;
+    margin-left: 56px;
+    margin-top: -55px;
+    height: 600px;
+}
+.crm-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+    width: 66px;
+    height: 67px;
+    background-position: -2px 0;
+    background-size: auto 66px;
+    padding: 20px;
+}
+.crm-plus{
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+.Work-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+    width: 60px;
+    height: 66px;
+    background-position: -69px 0;
+    background-size: auto 66px;
+    padding: 20px;
+}
+.Workplace{
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+
+.Fin-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+    width: 60px;
+    height: 66px;
+    background-position: -135px 0;
+    background-size: auto 66px;
+    padding: 20px;
+}
+
+.FinancePlus{
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+.Creat-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+    width: 60px;
+    height: 66px;
+    background-position: -732px 0;
+    background-size: auto 66px;
+    padding: 20px;
+}
+.CreatorPlus{
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+p{
+  font-size: 15px;
+    line-height: 1.6;
+    
+}
+.People-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+    width: 60px;
+    height: 66px;
+    background-position: -341px 0;
+    background-size: auto 66px;
+    padding: 20px;
+}
+.PeoplePlus{
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+
+.IT-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+    width: 60px;
+    height: 66px;
+    background-position: -198px 0;
+    background-size: auto 66px;
+    padding: 20px;
+}
+.ITManagement{
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+.market-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+    width: 60px;
+    height: 66px;
+    background-position: -854px 0;
+    background-size: auto 66px;
+    padding: 20px;
+}
+.marketingplus{
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+
+
+.zoho-app{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  
+  font-family: sans-serif;
+
+    width: 90%;
+    max-width: 1280px;
+    /* margin: 0 auto; */
+    padding: 80px 0 40px;
+    overflow: hidden;
+    padding-top: 120px;
+    margin: 0;
+    color: #000;
+    text-rendering: optimizeLegibility;
+    margin-left: 57px;
+}
+
+.top{
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.sales-app{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:repeat(6,1fr);
+  
+  padding: 30px 20px 40px;
+      
+}
+.sales-app div{
+    
+    border:1px solid #e5e5e5;
+    border-left: none;
+    border-top: none;
+    font-size: 14px;
+}
+.sales-app div .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  border-bottom: 1px solid #1aabe2;
+}
+
+
+.box-big{
+  grid-area:1/1/2/3;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+
+
+
+}
+.box-big:hover{
+  border-bottom: 1px solid #1aabe2;
+
+}
+.box1:hover{
+  border-bottom: 1px solid #1aabe2;
+
+}
+.box2:hover{
+  border-bottom: 1px solid #1aabe2;
+
+}
+.box3:hover{
+  border-bottom: 1px solid #1aabe2;
+
+}
+.box4:hover{
+  border-bottom: 1px solid #1aabe2;
+
+}
+.box5:hover{
+  border-bottom: 1px solid #1aabe2;
+
+}
+.box6:hover{
+  border-bottom: 1px solid #1aabe2;
+
+}
+.box7:hover{
+  border-bottom: 1px solid #1aabe2;
+
+}
+.box8:hover{
+  border-bottom: 1px solid #1aabe2;
+
+}
+.box9:hover{
+  border-bottom: 1px solid #1aabe2;
+
+}
+.box10:hover{
+  border-bottom: 1px solid #1aabe2;
+
+}
+.box11:hover{
+  border-bottom: 1px solid #1aabe2;
+
+}
+.bigin-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:0 -126px; 
+
+}
+.camp-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-320px -64px;  
+}
+.Forms-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-128px -64px;  
+}
+.Sign-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-160px -64px;  
+}
+.Social-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-192px -64px;  
+}
+.SalesIQ-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-224px -64px;  
+}
+.Survey-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-256px -64px;  
+}
+.Sites-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-352px -64px;  
+}
+.PageSense-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-96px -64px;  
+}.Backstage-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-512px -96px;  
+}
+.Commerce-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-481px -96px;
+}
+.bookings-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-96px -64px;
+}
+.MarketingHub-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-735px -96px;
+}
+
+.email-app{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:repeat(7,1fr);
+}
+.z1box{
+
+  grid-area:1/2/2/3;
+ 
+  font-size: 14px;
+  grid-template-rows: repeat(7,1fr);
+    padding: 30px 20px 40px;
+   
+}
+.z1box div{
+  border:1px solid #e5e5e5;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+.z1box div .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.box-s{
+  grid-area:1/1/2/3;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.top-1{
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+
+}
+.mail-icon{
+background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+height: 64px;
+width: 64px;
+background-size: 960px auto;
+background-position:-256px 0;
+}
+.Cliq-icon{
+background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+height: 32px;
+width: 32px;
+background-size: 960px auto;
+background-position:-672px -64px;
+display: flex;
+}
+.WorkDrive-icon{
+background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+height: 32px;
+width: 32px;
+background-size: 960px auto;
+background-position:-768px -96px;
+display: flex;
+}
+.Docs-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-704px -64px;  
+}
+.Writer-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-736px -64px;  
+}
+.Sheet-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-768px -64px;  
+}
+.Show-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-800px -64px;  
+}
+.Projects-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-832px -64px;  
+}
+.Sprints-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-864px -64px;  
+}
+.BugTrackere-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-896px -96px;  
+}
+.Connect-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-928px -96px;
+}
+.bookings-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-96px -64px;
+}
+.Meeting-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:0 -96px;
+}
+.Vault-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-32px -96px;
+}
+.ShowTime-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-64px -96px;
+}
+.NoteBook-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-96px -96px;
+}
+.Wiki-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-128px -96px;
+}
+.TeamInbox-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-256px -128px;
+}
+.TransMail-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-289px -128px;
+}
+
+.Finance-app{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:repeat(3,1fr);
+}
+.z2box{
+
+  grid-area:1/3/2/4;
+  grid-template-rows: repeat(4,1fr);
+    padding: 30px 20px 40px;
+}
+.z2box div{
+  border:1px solid #e5e5e5;
+  border-top: none;
+  font-size: 14px;
+  border-bottom: none; 
+}
+.z2box div{
+  border-left: none;
+}
+.z2box div .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.box-e{
+  grid-area:1/1/2/3;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.books-icon{
+background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+height: 64px;
+width: 64px;
+background-size: 960px auto;
+background-position:-64px 0;
+}
+.Inventory-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-448px -64px;
+}
+.Invoice-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-480px -64px;
+}
+.Subscriptions-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-512px -64px;
+}
+.Expensey-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-544px -64px;
+}
+.Checkout-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-576px -64px;
+}
+.Payroll-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-672px -96px;
+}
+.Finance-sub{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:repeat(2,1fr);
+  grid-template-rows:1fr 1fr;
+}
+
+
+.box-n{
+  grid-area:1/1/2/3;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   grid-template-rows:1fr 1fr;
+
+
+
+}
+.small-box{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:repeat(3,1fr);
+
+  display: grid;
+  height: 200px;
+
+}
+
+ 
+.Rec-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 64px;
+    width: 64px;
+background-size: 960px auto;
+background-position:-384px 0;
+}
+.people-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-352px -96px;
+}
+.Workerly-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-640px -96px;
+}
+.BackToWork-icon{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-160px -127px;
+}
+
+
+
+.zy-box{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  
+  
+  font-family: sans-serif;
+  grid-template-rows:1fr 1fr ;
+  width: 90%;
+    max-width: 1280px;
+    
+    padding: 80px 0 40px;
+    overflow: hidden;
+    padding-top: 120px;
+    margin: 0;
+    color: #000;
+    text-rendering: optimizeLegibility;
+    margin-left: 57px;
+}
+.z1-app div{
+  font-size: 11px;
+}
+.IT-app{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:repeat (4fr 1fr) ;
+  padding: 30px 20px 40px;
+}
+.IT-app div{
+  border:1px solid #e5e5e5;
+  border-left: none;
+  border-top: none;
+  font-size: 11px;
+}
+
+.IT-app div .box1,.box2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.IT-app div .box1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.IT-app div {padding: 30px 10px 10px;}
+
+.top{
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.box-big{
+  grid-area:1/1/2/3;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.Catalyst-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 64px;
+    width: 64px;
+background-size: 960px auto;
+background-position:-510px 0; 
+}
+.Plus-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position: -224px -96px;   
+}
+.Mobile-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position: -256px -96px;  
+}
+.Patch-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position: 576px -96px;   
+}
+.Remote-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position: -65px -127px;   
+}
+.Site24x7-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position: -288px -96px;  
+}
+.Log-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position: -832px -96px;   
+}
+.Identity-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position: -864px -96px;   
+}
+
+.Desktop-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position: -192px -128px;  
+}
+.cs-app{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:repeat (2fr 1fr) ;
+padding: 30px 20px 40px;
+}
+.cs-app div{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cs-app div{
+  border:1px solid #e5e5e5;
+  border-left: none;
+  border-top: none;
+}
+.cs-app div{
+  border-left: none;
+  padding: 30px 10px 10px;
+}
+.top{
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.box-big{
+  grid-area:1/1/2/3;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.Desk-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 64px;
+    width: 64px;
+background-size: 960px auto;
+background-position:-320px 0;
+} 
+.Assist-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-192px -96px;
+} 
+.Lens-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-32px -127px;
+} 
+.h1{
+  padding-top: 40px;
+    border-top: 1px solid #e5e5e5 !important;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.Analytics-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 64px;
+    width: 64px;
+background-size: 960px auto;
+background-position:-641px 0;
+} 
+.cs1-app{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:repeat (2fr 1fr) ;
+}
+.cs1-app div{
+  border:1px solid #e5e5e5;
+
+  border-top: none;
+  font-size: 14px;
+}
+.cs1-app div{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cs1-app div{
+  border-left: none;
+  padding: 30px 10px 10px;
+}
+.top{
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.box-big{
+  grid-area:1/1/2/3;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.Creator-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 64px;
+    width: 64px;
+background-size: 960px auto;
+background-position:-192px 0;
+} 
+.Flow-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-416px -96px;
+} 
+.Office-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-544px -96px;
+} 
+.Orchestly-icon{
+ background-image: url(https://www.zohowebstatic.com/sites/default/files/zp-global-icon-sprite-2x.png);
+  height: 32px;
+    width: 32px;
+background-size: 960px auto;
+background-position:-609px -96px;
+} 
+.banner{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    color: #000;
+    border-left: 30px;
+ 
+}
+
+.banner1{
+    margin-right: 2%;
+    text-align: center;
+    
+    flex-grow: 1;
+    background-color: blue;
+    width: 40%;
+    }
+    .zcta{
+      padding: 10px 15px;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    line-height: 1;
+    border-radius: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: var(--zf-primary-semibold);
+    }
+   
+  .banner2{
+    flex-grow: 1;
+    margin-right: 2%;
+    text-align: center;
+    background-image:url("images/2.jpg");
+    background-color: black;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .zshield{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    background: url(https://www.zohowebstatic.com/sites/default/files/zoho_general_pages/privacy-shield.png) no-repeat;
+    content: "";
+    background-size: 35%;
+    background-position: center;
+  }
+.master{
+  max-width: 1160px;
+    display: flex;
+    
+    width: 100%;
+    height: 100%
+  width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 20px 20px;
+    overflow: hidden;
+}
+.m1-app{
+  display: flex;
+  width: 50%;
+  height: 50%;
+  flex-direction: column;
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zoho_general_pages/zoho-home-testimonial-nicolas-2x.jpg);
+  
+  height: 350px;
+  flex-grow: 1;
+  position: relative;
+  bottom: 0px;
+}
+
+.m2-app{
+  display: grid;
+  width: 50%;
+  
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 0 0 0 80px;
+}
+.h-box{
+  background-image: url(https://www.zoho.com/sites/default/files/zoho-customers-top-brands.png);
+  width: 108px;
+    background-position: -937px 0;
+    background-size: 1045px auto;
+    height: 40px;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 0 0 25px 0;
+    text-indent: -9999px;
+    flex-grow: 1;
+}
+.k-box{
+  background-image: url(https://www.zoho.com/sites/default/files/zoho-customers-top-brands.png);
+  width: 76px;
+    background-position: -157px 0px;
+    background-size: 1153px auto;
+    height: 40px;
+    background-repeat: no-repeat;
+    display: flex;
+    
+    flex-grow: 1;
+}
+.l-box{
+  background-image: url(https://www.zoho.com/sites/default/files/zoho-customers-top-brands.png);
+  width: 106px;
+    background-position: -431px -40px;
+    background-size: 1045px auto;
+    height: 40px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0 0 25px 0;
+    text-indent: -9999px;
+    flex-grow: 1;
+}
+.m-box{
+  background-image: url(https://www.zoho.com/sites/default/files/zoho-customers-top-brands.png);
+  width: 122px;
+    background-position: -112px -40px;
+    background-size: 1045px auto;
+    height: 40px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0 0 25px 0;
+    text-indent: -9999px;
+    flex-grow: 1;
+}
+.t-box{
+  background-image: url(https://www.zoho.com/sites/default/files/zoho-customers-top-brands.png);
+  width: 133px;
+    background-position: -112px -72px;
+    background-size: 1045px auto;
+    height: 40px;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 0 0 25px 0;
+    text-indent: -9999px;
+    flex-grow: 1;
+}
+.s-box{
+  background-image: url(https://www.zoho.com/sites/default/files/zoho-customers-top-brands.png);
+  width: 31px;
+    background-position: -420px 0;
+    background-size: 1045px auto;
+    height: 40px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0 0 25px 0;
+    text-indent: -9999px;
+    flex-grow: 1;
+}
+
+.e-box{
+    display: flex;
+    height: 100%;
+    flex-direction:row;
+    max-width: 1170px;
+    padding: 80px 0;
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 20px 40px;
+    overflow: hidden;
+}
+#e-3-icon::before {
+    content: '';
+    position: absolute;
+    left: -43%;
+    top: -7%;
+    background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: -480px -50px;
+    background-size: auto 120px;
+}
+#e-4-icon::before {
+    content: '';
+    position: absolute;
+    left: -32%;
+    top: -7%;
+    background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: -512px -50px;
+    background-size: auto 120px;
+}
+
+.footer{
+  display: flex;
+  
+  flex-direction: column;
+
+}
+.product-links{
+display: flex;
+flex-direction: row;
+width: 100%;
+background-color: black;
+padding: 0 40px 0 0;
+justify-content: space-evenly;
+}
+.footer{
+  display: flex;
+  padding: 0 40px 0 0;
+  min-width: 240px;
+list-style: none;
+background-color: black;
+
+}
+li{
+  list-style-type: none;
+}
+.footer-end{
+  display: flex;
+  font-size: 11px;
+    text-align: center;
+    padding: 40px 0;
+    flex-direction: row;
+    background-color: black;
+}
+.footer-search {
+    margin: 50px auto;
+    position: relative;
+    max-width: 900px;
+    width: 90%;
+    display: flex;
+
+}
+.footer-search-input{
+  background: transparent;
+    padding: 12px 716px 12px 12px;
+    font-size: 15px;
+    float: none;
+    max-width: 100%;
+    margin: 0;
+    height: initial;
+    line-height: initial;
+    border: 1px solid #dfdfdf;
+    text-indent: 0;
+    width: 100%;
+    font-family: var(--zf-primary-regular);
+    border: 1px solid #666;
+    color: #fff;
+}
+.footer-search-btn {
+    border: 1px solid #666;
+    background: #2d2d2d;
+    border-left: 0;
+    height: 100%;
+    width: 48px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid #dfdfdf;
+    
+}
+.footer-search-btn span {
+    background: #f7f7f7 url(https://www.zohowebstatic.com/sites/default/files/help-new-sprite.png) no-repeat -5px -5px/auto 40px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-position: -111px -15px;
+    vertical-align: middle;
+  }
+  .ZPprivacy {
+    padding: 0 20px;
+    display: block;
+    flex-direction: row;
+    width: 100%;
+   border-right: 10px;
+   text-align: center;
+}
+.ZPprivacy li{
+  display: inline-block;
+  border-right: 1px solid #ccc;
+    padding: 0 10px;
+    margin-bottom: 10px;
+
+}
+
+.zsocial{
+  text-align: center !important;
+    margin-top: 20px;
+    display: block;
+
+}
+.twitter{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+  width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    text-indent: -999px;
+    background-size: auto 110px;
+    background-repeat: no-repeat;
+    background-position: -737px -76px;
+
+}
+.fb{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+  width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    text-indent: -999px;
+    background-size: auto 110px;
+    background-repeat: no-repeat;
+    background-position: -678px -76px;
+
+}
+.yt{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+  width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    text-indent: -999px;
+    background-size: auto 110px;
+    background-repeat: no-repeat;
+    background-position: -708px -76px;
+
+}
+.lk{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+  width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    text-indent: -999px;
+    background-size: auto 110px;
+    background-repeat: no-repeat;
+    background-position: -767px -76px;
+
+}
+.ins{
+  background-image: url(https://www.zohowebstatic.com/sites/default/files/zh-sprite-2x-new.png);
+  width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    text-indent: -999px;
+    background-size: auto 110px;
+    background-repeat: no-repeat;
+    background-position: -797px -76px;
+
+}
